@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'products#index'
 
   namespace :account do
+    resources :users
     resources :orders
   end
 
